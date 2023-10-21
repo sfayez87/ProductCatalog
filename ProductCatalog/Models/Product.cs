@@ -15,8 +15,9 @@ namespace ProductCatalog.Models
         public DateTime CreationDate { get; set; }
         public string CreatedByUserId { get; set; }
         public DateTime StartDate { get; set; }
-        public DateTime Duration { get; set; }
+        public double Duration { get; set; }
         public decimal Price { get; set; }
-        public List<Category> Categories { get; set; }
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
     }
 }
