@@ -1,4 +1,3 @@
-# ProductCatalog
 <h3 align="left">User Credentials and Roles:</h3>
 
 ###
