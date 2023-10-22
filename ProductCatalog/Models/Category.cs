@@ -10,7 +10,7 @@ namespace ProductCatalog.Models
     {
         [Key]
         public int Id { get; set; }
-        [Display(Name ="Category Name")]
+        [Display(Name ="Category")]
         [Required]
         public string Name { get; set; }
         public List<Product> Products { get; set; }

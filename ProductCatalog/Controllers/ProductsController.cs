@@ -115,11 +115,6 @@ namespace ProductCatalog.Controllers
                 CategoryId = product.CategoryId,
                 Categories = await _context.Categories.ToListAsync()
             };
-
-            if (product == null)
-            {
-                return NotFound();
-            }
             return View(productVM);
         }
 

@@ -51,7 +51,13 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <button type="submit" class="btn btn-danger mt-4">
+            <i class="bi bi-trash"></i>
+            Delete
+        </button>
+        <a asp-action="ProductsManagement" class="btn btn-outline-secondary mt-4">
+            <i class="bi bi-x"></i>
+            Cancel
+        </a>
     </form>
 </div>
