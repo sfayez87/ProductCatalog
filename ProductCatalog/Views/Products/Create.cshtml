@@ -54,11 +54,15 @@
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
     <script src="~/lib/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
     <script>
-    $('#Start_date').val(moment(new Date()).format('DD/MM/YYYY'));
-    $('#Start_date').datepicker({
-        todayHighlight: true,
-        forceParse: false,
-        format: 'dd/mm/yyyy'
-    });
+        (function ($) {
+            $(document).ready(function () {
+                $('#StartDate').val(moment(new Date()).format('DD/MM/YYYY'));
+                $('#StartDate').datepicker({
+                    todayHighlight: true,
+                    forceParse: false,
+                    format: 'dd/mm/yyyy'
+                });
+            });
+        })(jQuery);
     </script>
 }

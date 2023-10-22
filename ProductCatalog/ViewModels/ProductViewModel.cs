@@ -13,6 +13,8 @@ namespace ProductCatalog.ViewModels
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
+
+        [DataType(DataType.Text)]
         public DateTime StartDate { get; set; }
         public double Duration { get; set; }
         public decimal Price { get; set; }
